@@ -7,3 +7,8 @@
 //
 
 import Foundation
+
+class SQLiteManager {
+    //swift中的单例
+    static let shareManager = SQLiteManager();
+}
