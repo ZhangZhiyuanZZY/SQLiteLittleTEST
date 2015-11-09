@@ -28,13 +28,23 @@ class Person: NSObject {
     }
     
     ///MARK: -查询
-    class  func persons() ->[Person] {
+    
+    class func persons() -> [Person]? {
+        // 1. sql - 粘贴的语句一定是能够执行的
+        let sql = "SELECT id, name, age, height, title FROM T_Person LIMIT 20;"
         
-        //设置sql数组
-        let sql =  "SELECT id, name, age, height, title FROM T_Person LIMIT 20;"
+        // 2. 执行sql
+        guard let array = SQLiteManager.shareManager.execRecordSet(sql) else {
+            return nil
+        }
         
-        //执行sql
-       guard let array = SQLiteManager.shareManager
+        // 3. 遍历数组，字典转模型
+        var arrayM = [Person]()
+        for dict in array {
+            arrayM.append(Person(dict: dict))
+        }
+        
+        return arrayM
     }
     
     //MARK: -将当前对象插入数据

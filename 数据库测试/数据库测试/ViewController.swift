@@ -20,7 +20,8 @@ class ViewController: UIViewController {
 //        demoDeleteData()
         
         //查询
-        Person.persons()
+        print(Person.persons())
+       
     
     }
     

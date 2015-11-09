@@ -150,7 +150,7 @@ class SQLiteManager {
             // 每一列的数据类型
             let type = sqlite3_column_type(stmt, col)
             
-            // 根据类型获取数值
+            // 根据类型获取数值     如果某一列是某种数据库类型的, 就转化成对应的swift类型, 并根据字段名存到字典中
             var value: AnyObject?
             switch type {
             case SQLITE_INTEGER:
