@@ -14,6 +14,7 @@
 		18DCE81B1BEF721800728D92 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 18DCE8191BEF721800728D92 /* LaunchScreen.storyboard */; };
 		18DCE8231BEF722E00728D92 /* libsqlite3.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 18DCE8221BEF722E00728D92 /* libsqlite3.tbd */; };
 		18DCE8261BEF72CD00728D92 /* SQLiteManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18DCE8251BEF72CD00728D92 /* SQLiteManager.swift */; };
+		18DCE8281BEF97BB00728D92 /* Person.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18DCE8271BEF97BB00728D92 /* Person.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,6 +28,7 @@
 		18DCE8221BEF722E00728D92 /* libsqlite3.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.tbd; path = usr/lib/libsqlite3.tbd; sourceTree = SDKROOT; };
 		18DCE8241BEF725F00728D92 /* SQLite-Bridge.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "SQLite-Bridge.h"; sourceTree = "<group>"; };
 		18DCE8251BEF72CD00728D92 /* SQLiteManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SQLiteManager.swift; sourceTree = "<group>"; };
+		18DCE8271BEF97BB00728D92 /* Person.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Person.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +65,7 @@
 			children = (
 				18DCE8101BEF721800728D92 /* AppDelegate.swift */,
 				18DCE8121BEF721800728D92 /* ViewController.swift */,
+				18DCE8271BEF97BB00728D92 /* Person.swift */,
 				18DCE8241BEF725F00728D92 /* SQLite-Bridge.h */,
 				18DCE8251BEF72CD00728D92 /* SQLiteManager.swift */,
 				18DCE8141BEF721800728D92 /* Main.storyboard */,
@@ -147,6 +150,7 @@
 			files = (
 				18DCE8261BEF72CD00728D92 /* SQLiteManager.swift in Sources */,
 				18DCE8131BEF721800728D92 /* ViewController.swift in Sources */,
+				18DCE8281BEF97BB00728D92 /* Person.swift in Sources */,
 				18DCE8111BEF721800728D92 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

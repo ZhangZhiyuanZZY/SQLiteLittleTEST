@@ -11,3 +11,4 @@
 
 
 #endif /* SQLite_Bridge_h */
+#import <sqlite3.h>
